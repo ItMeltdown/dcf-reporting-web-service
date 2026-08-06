@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4455EDBE-E271-44AC-B189-7B05D55D2AE7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Dcf.Kids.WiKids.Data</RootNamespace>
+    <AssemblyName>Dcf.Kids.WiKids.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169;0649</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Prd|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Prod\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Dev|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Dev\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <NoWarn>0169;0649</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <NoWarn>0169;0649</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Dev|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Dev\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <NoWarn>0169;0649</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Sys|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Sys\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <NoWarn>0169;0649</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Sys|x64'">
+    <OutputPath>bin\x64\Sys\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Acc|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Acc\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <NoWarn>0169;0649</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Acc|x64'">
+    <OutputPath>bin\x64\Acc\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Prd|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Prd\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <NoWarn>0169;0649</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Prd|x64'">
+    <OutputPath>bin\x64\Prd\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Edu|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Edu\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <NoWarn>0169;0649</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Edu|x64'">
+    <OutputPath>bin\x64\Edu\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Development|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Development\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <NoWarn>0169;0649</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Development|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Development\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <NoWarn>0169;0649</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.2.1.35\lib\net461\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Dcf.Kids.Framework.Cache">
+      <HintPath>..\References\Dcf.Kids.Framework.Cache.dll</HintPath>
+    </Reference>
+    <Reference Include="Dcf.Kids.Framework.Core">
+      <HintPath>..\References\Dcf.Kids.Framework.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Dcf.Kids.Framework.Data">
+      <HintPath>..\References\Dcf.Kids.Framework.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Dcf.Kids.Framework.Net.Ftp">
+      <HintPath>..\References\Dcf.Kids.Framework.Net.Ftp.dll</HintPath>
+    </Reference>
+    <Reference Include="Dcf.Kids.Framework.Security">
+      <HintPath>..\References\Dcf.Kids.Framework.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Dcf.Kids.Framework.Xml, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\Dcf.Kids.Framework.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="IBM.Data.DB2, Version=9.7.4.4, Culture=neutral, PublicKeyToken=7c307b91aa13d208, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\IBM.Data.DB2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accessors\Case\GetCase.cs" />
+    <Compile Include="Accessors\Case\IGetCase.cs" />
+    <Compile Include="Accessors\Coupons\GetPaymentCouponByCase.cs" />
+    <Compile Include="Accessors\Coupons\GetPaymentCouponToMe.cs" />
+    <Compile Include="Accessors\Coupons\GetPaymentCouponByMe.cs" />
+    <Compile Include="Accessors\Coupons\IGetPaymentCouponTo.cs" />
+    <Compile Include="Accessors\Coupons\IGetPaymentCouponByMe.cs" />
+    <Compile Include="Accessors\Coupons\IGetPaymentCouponByCase.cs" />
+    <Compile Include="Accessors\Participant\GetMailingAddress.cs" />
+    <Compile Include="Accessors\Participant\GetParticipant.cs" />
+    <Compile Include="Accessors\Participant\IGetMailingAddress.cs" />
+    <Compile Include="Accessors\Participant\IGetParticipant.cs" />
+    <Compile Include="Accessors\SystemAccount\GetSystemAccount.cs" />
+    <Compile Include="Accessors\SystemAccount\IGetSystemAccount.cs" />
+    <Compile Include="Accessors\ThirdParties\GetThirdPartyPhone.cs" />
+    <Compile Include="Accessors\ThirdParties\IGetThirdPartyPhone.cs" />
+    <Compile Include="Models\Case\Case.cs" />
+    <Compile Include="Models\Case\CaseRequest.cs" />
+    <Compile Include="Models\Case\ICase.cs" />
+    <Compile Include="Models\Case\ICaseRequest.cs" />
+    <Compile Include="Models\Coupons\IPaymentToMeRequest.cs" />
+    <Compile Include="Models\Coupons\IPaymentByMeRequest.cs" />
+    <Compile Include="Models\Coupons\IPaymentToMe.cs" />
+    <Compile Include="Models\Coupons\IPaymentByMe.cs" />
+    <Compile Include="Models\Coupons\IPaymentByCase.cs" />
+    <Compile Include="Models\Coupons\IPaymentByCaseRequest.cs" />
+    <Compile Include="Models\Coupons\PaymentByMe.cs" />
+    <Compile Include="Models\Coupons\PaymentToMeRequest.cs" />
+    <Compile Include="Models\Coupons\PaymentByMeRequest.cs" />
+    <Compile Include="Models\Coupons\PaymentToMe.cs" />
+    <Compile Include="Models\Participant\IMailingAddress.cs" />
+    <Compile Include="Models\Participant\IMailingAddressRequest.cs" />
+    <Compile Include="Models\Participant\IParticipant.cs" />
+    <Compile Include="Models\Participant\IParticipantRequest.cs" />
+    <Compile Include="Models\Participant\MailingAddress.cs" />
+    <Compile Include="Models\Participant\MailingAddressRequest.cs" />
+    <Compile Include="Models\Participant\Participant.cs" />
+    <Compile Include="Models\Participant\ParticipantRequest.cs" />
+    <Compile Include="Models\SystemAccount\ISystemAccount.cs" />
+    <Compile Include="Models\SystemAccount\ISystemAccountRequest.cs" />
+    <Compile Include="Models\SystemAccount\SystemAccount.cs" />
+    <Compile Include="Models\SystemAccount\SystemAccountRequest.cs" />
+    <Compile Include="Models\ThirdParties\IThirdPartyPhone.cs" />
+    <Compile Include="Models\ThirdParties\IThirdPartyPhoneRequest.cs" />
+    <Compile Include="Models\Coupons\PaymentByCase.cs" />
+    <Compile Include="Models\Coupons\PaymentByCaseRequest.cs" />
+    <Compile Include="Models\ThirdParties\ThirdPartyPhone.cs" />
+    <Compile Include="Models\ThirdParties\ThirdPartyPhoneRequest.cs" />
+    <Compile Include="Utilities\FormatDate.cs" />
+    <Compile Include="Utilities\GetXmlValue.cs" />
+    <Compile Include="Utilities\IDbContext.cs" />
+    <Compile Include="Utilities\KidsDb2Context.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities\KidsDbParameter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Dcf.Kids.WiKids.Utility\Dcf.Kids.WiKids.Utility.csproj">
+      <Project>{08209c7b-565a-45e5-9268-dc9136365730}</Project>
+      <Name>Dcf.Kids.WiKids.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Models\Coupons\PaymentsByCase.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Models\Coupons\PaymentsByMe.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Models\Coupons\PaymentsToMe.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

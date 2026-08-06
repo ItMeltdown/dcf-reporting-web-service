@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
+   <xsd:element name="ArrayOfPaymentByMe">
+      <xsd:complexType>
+         <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" name="PaymentByMe">
+               <xsd:complexType>
+                  <xsd:sequence>
+                     <xsd:element name="TRNDATE" type="xsd:date" />
+                     <xsd:element name="TRNAMT" type="xsd:decimal" />
+                     <xsd:element name="TRNSRC" type="xsd:string" />
+                  </xsd:sequence>
+               </xsd:complexType>
+            </xsd:element>
+         </xsd:sequence>
+      </xsd:complexType>
+   </xsd:element>
+</xs:schema>
