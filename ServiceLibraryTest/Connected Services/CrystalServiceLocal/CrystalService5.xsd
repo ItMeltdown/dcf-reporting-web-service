@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://ReportingServiceLibrary" elementFormDefault="qualified" targetNamespace="http://ReportingServiceLibrary" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:25011/CrystalService.svc?xsd=xsd2" namespace="http://Dcf.Kids.ReportingServiceLibrary" />
+  <xs:import schemaLocation="http://localhost:25011/CrystalService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Dcf.Kids.Reporting.ServiceLibrary" />
+  <xs:complexType name="DocumentRequest">
+    <xs:sequence>
+      <xs:element name="ClientCreated" type="xs:dateTime" />
+      <xs:element name="DatabaseUser" nillable="true" type="xs:string" />
+      <xs:element name="DestinationPath" nillable="true" type="xs:string" />
+      <xs:element name="DocumentId" nillable="true" type="xs:string" />
+      <xs:element name="DocumentKey" type="xs:int" />
+      <xs:element xmlns:q1="http://Dcf.Kids.ReportingServiceLibrary" name="DocumentPrintOptions" nillable="true" type="q1:DocumentPrintOptions" />
+      <xs:element name="GUID" nillable="true" type="xs:string" />
+      <xs:element name="GenerationDate" type="xs:dateTime" />
+      <xs:element name="MachineName" nillable="true" type="xs:string" />
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Dcf.Kids.Reporting.ServiceLibrary" name="OutputFormat" type="q2:OutputFormat" />
+      <xs:element name="OverridePath" nillable="true" type="xs:string" />
+      <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Dcf.Kids.Reporting.ServiceLibrary" name="ParameterType" type="q3:ParameterType" />
+      <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/Dcf.Kids.Reporting.ServiceLibrary" name="PrintSettings" type="q4:PrintSettings" />
+      <xs:element name="ReportFileName" nillable="true" type="xs:string" />
+      <xs:element name="ServiceProcessingEnd" type="xs:dateTime" />
+      <xs:element name="ServiceProcessingStart" type="xs:dateTime" />
+      <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/Dcf.Kids.Reporting.ServiceLibrary" name="Source" type="q5:CreationSource" />
+      <xs:element name="SubPath" nillable="true" type="xs:string" />
+      <xs:element name="User" nillable="true" type="xs:string" />
+      <xs:element name="WUID" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DocumentRequest" nillable="true" type="tns:DocumentRequest" />
+  <xs:complexType name="ReportParameterCollection">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="anyType" nillable="true" type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ReportParameterCollection" nillable="true" type="tns:ReportParameterCollection" />
+  <xs:complexType name="ReportParameterEntity">
+    <xs:sequence>
+      <xs:element name="ParameterName" nillable="true" type="xs:string" />
+      <xs:element name="ParameterValue" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ReportParameterEntity" nillable="true" type="tns:ReportParameterEntity" />
+  <xs:complexType name="ArrayOfReportParameterEntity">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ReportParameterEntity" nillable="true" type="tns:ReportParameterEntity" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfReportParameterEntity" nillable="true" type="tns:ArrayOfReportParameterEntity" />
+</xs:schema>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://Dcf.Kids.ReportingServiceLibrary" elementFormDefault="qualified" targetNamespace="http://Dcf.Kids.ReportingServiceLibrary" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:25011/CrystalService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Dcf.Kids.Reporting.ServiceLibrary" />
+  <xs:complexType name="DocumentPrintOptions">
+    <xs:sequence>
+      <xs:element name="Margin" nillable="true" type="tns:Margin" />
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Dcf.Kids.Reporting.ServiceLibrary" name="PaperOrientation" type="q1:PaperOrientation" />
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Dcf.Kids.Reporting.ServiceLibrary" name="PaperSize" type="q2:PaperSize" />
+      <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Dcf.Kids.Reporting.ServiceLibrary" name="PrinterDuplex" type="q3:PrinterDuplex" />
+      <xs:element name="PrinterName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DocumentPrintOptions" nillable="true" type="tns:DocumentPrintOptions" />
+  <xs:complexType name="Margin">
+    <xs:sequence>
+      <xs:element name="BottomMargin" type="xs:int" />
+      <xs:element name="LeftMargin" type="xs:int" />
+      <xs:element name="RightMargin" type="xs:int" />
+      <xs:element name="TopMargin" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Margin" nillable="true" type="tns:Margin" />
+</xs:schema>

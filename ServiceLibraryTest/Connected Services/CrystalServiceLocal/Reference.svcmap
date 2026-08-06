@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="f398fb4c-bfca-412f-b377-df6bb26bd632" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:25011/CrystalService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CrystalService1.wsdl" MetadataType="Wsdl" ID="1db9de6b-f8ba-417f-b380-f869aa9438e1" SourceId="1" SourceUrl="http://localhost:25011/CrystalService.svc?wsdl" />
+    <MetadataFile FileName="CrystalService5.xsd" MetadataType="Schema" ID="3ab3bc4a-8e86-4c81-bcf7-2e7f8f983837" SourceId="1" SourceUrl="http://localhost:25011/CrystalService.svc?xsd=xsd1" />
+    <MetadataFile FileName="CrystalService51.xsd" MetadataType="Schema" ID="a5d6a878-be88-4d9e-b84b-3d27ee94408f" SourceId="1" SourceUrl="http://localhost:25011/CrystalService.svc?xsd=xsd0" />
+    <MetadataFile FileName="CrystalService52.xsd" MetadataType="Schema" ID="4667317d-6827-42ab-8825-4bb66bb5b091" SourceId="1" SourceUrl="http://localhost:25011/CrystalService.svc?xsd=xsd3" />
+    <MetadataFile FileName="CrystalService53.xsd" MetadataType="Schema" ID="b6a008e7-9469-4383-8028-6e52143536c4" SourceId="1" SourceUrl="http://localhost:25011/CrystalService.svc?xsd=xsd2" />
+    <MetadataFile FileName="CrystalService54.xsd" MetadataType="Schema" ID="67aba915-3590-421a-8dc9-635ae14edd5d" SourceId="1" SourceUrl="http://localhost:25011/CrystalService.svc?xsd=xsd4" />
+    <MetadataFile FileName="CrystalService1.disco" MetadataType="Disco" ID="9205dd72-ca5b-4351-943a-f3606faed315" SourceId="1" SourceUrl="http://localhost:25011/CrystalService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Dcf.Kids.Reporting.ServiceLibrary" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Dcf.Kids.Reporting.ServiceLibrary" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:25011/CrystalService.svc?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:simpleType name="PaperOrientation">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="DefaultPaperOrientation" />
+      <xs:enumeration value="Portrait" />
+      <xs:enumeration value="Landscape" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="PaperOrientation" nillable="true" type="tns:PaperOrientation" />
+  <xs:simpleType name="PaperSize">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Unknown" />
+      <xs:enumeration value="PaperLetter" />
+      <xs:enumeration value="PaperLegal">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">5</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="PaperSize" nillable="true" type="tns:PaperSize" />
+  <xs:simpleType name="PrinterDuplex">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Default" />
+      <xs:enumeration value="Simplex" />
+      <xs:enumeration value="Vertical" />
+      <xs:enumeration value="Horizontal" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="PrinterDuplex" nillable="true" type="tns:PrinterDuplex" />
+  <xs:simpleType name="OutputFormat">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="CrystalReport" />
+      <xs:enumeration value="Excel" />
+      <xs:enumeration value="ExcelDataOnly" />
+      <xs:enumeration value="PDF" />
+      <xs:enumeration value="RTF" />
+      <xs:enumeration value="Word" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="OutputFormat" nillable="true" type="tns:OutputFormat" />
+  <xs:simpleType name="ParameterType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Distribution" />
+      <xs:enumeration value="Request" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ParameterType" nillable="true" type="tns:ParameterType" />
+  <xs:simpleType name="PrintSettings">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Unknown" />
+      <xs:enumeration value="Landscape_Duplex" />
+      <xs:enumeration value="Landscape_Simplex" />
+      <xs:enumeration value="Portrait_Duplex" />
+      <xs:enumeration value="Portrait_Simplex" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="PrintSettings" nillable="true" type="tns:PrintSettings" />
+  <xs:simpleType name="CreationSource">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Unknown" />
+      <xs:enumeration value="Batch" />
+      <xs:enumeration value="Web" />
+      <xs:enumeration value="Online" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="CreationSource" nillable="true" type="tns:CreationSource" />
+</xs:schema>
