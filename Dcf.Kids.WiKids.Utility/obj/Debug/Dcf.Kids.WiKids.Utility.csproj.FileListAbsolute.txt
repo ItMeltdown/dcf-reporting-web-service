@@ -1,0 +1,9 @@
+C:\Git\WIDCF-FESTS-CS\KidsReportingWebService\Dcf.Kids.WiKids.Utility\bin\Debug\Dcf.Kids.WiKids.Utility.dll
+C:\Git\WIDCF-FESTS-CS\KidsReportingWebService\Dcf.Kids.WiKids.Utility\bin\Debug\Dcf.Kids.WiKids.Utility.pdb
+C:\Git\WIDCF-FESTS-CS\KidsReportingWebService\Dcf.Kids.WiKids.Utility\bin\Debug\Dcf.Kids.Framework.Core.dll
+C:\Git\WIDCF-FESTS-CS\KidsReportingWebService\Dcf.Kids.WiKids.Utility\bin\Debug\Dcf.Kids.Framework.Xml.dll
+C:\Git\WIDCF-FESTS-CS\KidsReportingWebService\Dcf.Kids.WiKids.Utility\obj\Debug\Dcf.Kids.WiKids.Utility.csproj.AssemblyReference.cache
+C:\Git\WIDCF-FESTS-CS\KidsReportingWebService\Dcf.Kids.WiKids.Utility\obj\Debug\Dcf.Kids.WiKids.Utility.csproj.CoreCompileInputs.cache
+C:\Git\WIDCF-FESTS-CS\KidsReportingWebService\Dcf.Kids.WiKids.Utility\obj\Debug\Dcf.Kids.F1D4AC5E.Up2Date
+C:\Git\WIDCF-FESTS-CS\KidsReportingWebService\Dcf.Kids.WiKids.Utility\obj\Debug\Dcf.Kids.WiKids.Utility.dll
+C:\Git\WIDCF-FESTS-CS\KidsReportingWebService\Dcf.Kids.WiKids.Utility\obj\Debug\Dcf.Kids.WiKids.Utility.pdb
